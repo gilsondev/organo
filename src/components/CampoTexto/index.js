@@ -6,7 +6,12 @@ export const CampoTexto = (props) => {
   return (
     <div className="campo-texto">
       <label>{props.label}</label>
-      <input type="text" placeholder={placeholder} />
+      <input
+        type="text"
+        placeholder={placeholder}
+        value={props.value}
+        onChange={props.onChange}
+      />
     </div>
   );
 };
