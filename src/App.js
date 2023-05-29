@@ -2,6 +2,7 @@ import React from "react";
 import { Banner } from "./components/Banner";
 import { Formulario } from "./components/Formulario";
 import { Time } from "./components/Time";
+import { Rodape } from "./components/Rodape";
 
 function App() {
   const teams = [
@@ -42,7 +43,178 @@ function App() {
     },
   ];
 
-  const [colaborators, setColaborators] = React.useState([]);
+  const inicial = [
+    {
+      name: "JULIANA AMOASEI",
+      role: "Desenvolvedora de software e instrutora",
+      image:
+        "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
+      team: teams[0].name,
+    },
+    {
+      name: "DANIEL ARTINE",
+      role: "Engenheiro de Software na Stone Age",
+      image:
+        "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
+      team: teams[0].name,
+    },
+    {
+      name: "GUILHERME LIMA",
+      role: "Desenvolvedor Python e JavaScript na Alura",
+      image:
+        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+      team: teams[0].name,
+    },
+    {
+      name: "PAULO SILVEIRA",
+      role: "Hipster e CEO da Alura",
+      image:
+        "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
+      team: teams[0].name,
+    },
+    {
+      name: "JULIANA AMOASEI",
+      role: "Desenvolvedora de software e instrutora",
+      image:
+        "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
+      team: teams[1].name,
+    },
+    {
+      name: "DANIEL ARTINE",
+      role: "Engenheiro de Software na Stone Age",
+      image:
+        "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
+      team: teams[1].name,
+    },
+    {
+      name: "GUILHERME LIMA",
+      role: "Desenvolvedor Python e JavaScript na Alura",
+      image:
+        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+      team: teams[1].name,
+    },
+    {
+      name: "PAULO SILVEIRA",
+      role: "Hipster e CEO da Alura",
+      image:
+        "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
+      team: teams[1].name,
+    },
+    {
+      name: "JULIANA AMOASEI",
+      role: "Desenvolvedora de software e instrutora",
+      image:
+        "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
+      team: teams[2].name,
+    },
+    {
+      name: "DANIEL ARTINE",
+      role: "Engenheiro de Software na Stone Age",
+      image:
+        "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
+      team: teams[2].name,
+    },
+    {
+      name: "GUILHERME LIMA",
+      role: "Desenvolvedor Python e JavaScript na Alura",
+      image:
+        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+      team: teams[2].name,
+    },
+    {
+      name: "PAULO SILVEIRA",
+      role: "Hipster e CEO da Alura",
+      image:
+        "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
+      team: teams[2].name,
+    },
+    {
+      name: "JULIANA AMOASEI",
+      role: "Desenvolvedora de software e instrutora",
+      image:
+        "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
+      team: teams[3].name,
+    },
+    {
+      name: "DANIEL ARTINE",
+      role: "Engenheiro de Software na Stone Age",
+      image:
+        "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
+      team: teams[3].name,
+    },
+    {
+      name: "GUILHERME LIMA",
+      role: "Desenvolvedor Python e JavaScript na Alura",
+      image:
+        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+      team: teams[3].name,
+    },
+    {
+      name: "PAULO SILVEIRA",
+      role: "Hipster e CEO da Alura",
+      image:
+        "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
+      team: teams[3].name,
+    },
+    {
+      name: "JULIANA AMOASEI",
+      role: "Desenvolvedora de software e instrutora",
+      image:
+        "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
+      team: teams[4].name,
+    },
+    {
+      name: "DANIEL ARTINE",
+      role: "Engenheiro de Software na Stone Age",
+      image:
+        "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
+      team: teams[4].name,
+    },
+    {
+      name: "GUILHERME LIMA",
+      role: "Desenvolvedor Python e JavaScript na Alura",
+      image:
+        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+      team: teams[4].name,
+    },
+    {
+      name: "PAULO SILVEIRA",
+      role: "Hipster e CEO da Alura",
+      image:
+        "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
+      team: teams[4].name,
+    },
+    {
+      name: "JULIANA AMOASEI",
+      role: "Desenvolvedora de software e instrutora",
+      image:
+        "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
+      team: teams[5].name,
+    },
+    {
+      name: "DANIEL ARTINE",
+      role: "Engenheiro de Software na Stone Age",
+      image:
+        "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
+      team: teams[5].name,
+    },
+    {
+      name: "GUILHERME LIMA",
+      role: "Desenvolvedor Python e JavaScript na Alura",
+      image:
+        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+      team: teams[5].name,
+    },
+    {
+      name: "PAULO SILVEIRA",
+      role: "Hipster e CEO da Alura",
+      image:
+        "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
+      team: teams[5].name,
+    },
+  ];
+
+  const [colaborators, setColaborators] = React.useState(inicial);
 
   const createColaborator = (colaborator) => {
     setColaborators([...colaborators, colaborator]);
@@ -67,6 +239,7 @@ function App() {
           )}
         />
       ))}
+      <Rodape />
     </div>
   );
 }
