@@ -46,7 +46,6 @@ function App() {
 
   const createColaborator = (colaborator) => {
     setColaborators([...colaborators, colaborator]);
-    console.log(colaborators);
   };
 
   return (
