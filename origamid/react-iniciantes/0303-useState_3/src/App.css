@@ -1,0 +1,32 @@
+.buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.card {
+    width: 25rem;
+    margin: 5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin-bottom: 0;
+}
+
+.card-cover {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card-cover img {
+    height: 256px;
+}
+
+.card-description {
+    font-size: 1rem;
+}
