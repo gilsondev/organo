@@ -7,3 +7,4 @@ aos estudos de React.
 
 - [Organo](./alura/organo): Sistema de cadastro de pessoas para um organograma de uma empresa
 - [Alura Space](./alura/alura-space): Site que traz galeria de imagens do espaço
+- [Exercícios React](./origamid/react-iniciantes): Exercícios de React do curso na Origamid
