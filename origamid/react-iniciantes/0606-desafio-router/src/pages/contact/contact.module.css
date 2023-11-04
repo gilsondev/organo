@@ -1,0 +1,20 @@
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.contactData li {
+    font-size: 1.2rem;
+    font-family: var(--secondary-font);
+    margin-bottom: 1rem;
+}
+
+.contactData li::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background: #ddd;
+    margin-right: 10px;
+}

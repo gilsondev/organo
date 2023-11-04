@@ -4,6 +4,7 @@ import Text from "../../components/text";
 import { useParams } from "react-router-dom";
 import styles from "./product.module.css";
 import Loading from "../../img/loading.svg";
+import Head from "../../components/head";
 
 const Product = () => {
   const params = useParams();
@@ -33,26 +34,32 @@ const Product = () => {
   return (
     !loading &&
     product && (
-      <div className={styles.productContainer}>
-        <Image
-          src={product.fotos[0].src}
-          width={300}
-          height={400}
-          alt={product.fotos[0].titulo}
+      <>
+        <Head
+          title={`Detalhes do Produto | ${product.nome}`}
+          description={product.descricao}
         />
-        <div>
-          <Text as="h1">{product.nome}</Text>
-          <span className={styles.productPrice}>
-            R${" "}
-            {new Intl.NumberFormat("pt-BR", { currency: "BRL" }).format(
-              product.preco
-            )}
-          </span>
-          <Text as="p" className={styles.productDescription}>
-            {product.descricao}
-          </Text>
+        <div className={`${styles.productContainer} animeLeft`}>
+          <Image
+            src={product.fotos[0].src}
+            width={500}
+            height={600}
+            alt={product.fotos[0].titulo}
+          />
+          <div>
+            <Text as="h1">{product.nome}</Text>
+            <span className={styles.productPrice}>
+              R${" "}
+              {new Intl.NumberFormat("pt-BR", { currency: "BRL" }).format(
+                product.preco
+              )}
+            </span>
+            <Text as="p" className={styles.productDescription}>
+              {product.descricao}
+            </Text>
+          </div>
         </div>
-      </div>
+      </>
     )
   );
 };
