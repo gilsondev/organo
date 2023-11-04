@@ -1,0 +1,21 @@
+:root {
+    --gray: #b2b2b2;
+    --light-gray: #d4d4d4;
+    --black: #090909;
+    --red: tomato;
+    --white: #f7f7f7;
+    --secondary-font: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--main-font);
+    padding: 0 30%;
+}

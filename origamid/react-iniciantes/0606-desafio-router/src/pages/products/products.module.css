@@ -1,0 +1,16 @@
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.product {
+    text-decoration: none;
+    color: var(--black);
+    opacity: 1;
+    transition: .3s ease-in-out;
+}
+
+.product:hover {
+    opacity: .6;
+}

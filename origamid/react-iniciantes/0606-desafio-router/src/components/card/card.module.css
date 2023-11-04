@@ -1,0 +1,7 @@
+.card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--black);
+}

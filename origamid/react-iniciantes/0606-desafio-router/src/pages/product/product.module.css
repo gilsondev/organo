@@ -1,0 +1,30 @@
+.productContainer {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.productPrice {
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    background-color: #AAF875;
+    border-radius: 4px;
+    padding: .5rem;
+    color: #377C21;
+}
+
+.productDescription {
+    font-family: var(--secondary-font);
+    font-size: 18px;
+}
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading p {
+    font-size: 22px;
+}
