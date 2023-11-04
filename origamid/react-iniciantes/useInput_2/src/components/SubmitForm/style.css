@@ -1,0 +1,15 @@
+#submitButton {
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: cornflowerblue;
+    color: white;
+    border: 1px solid rgb(16, 91, 171);
+}
+
+#submitButton:hover {
+    background-color: rgb(16, 91, 171);
+}
+
+#submitButton:disabled {
+    background-color: rgb(136, 184, 235);
+}
